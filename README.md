@@ -4,17 +4,19 @@
 
 # Node with Alignment Enhancement for Edit Node
 
-This repository contains an enhanced version of `node-base-edit-node`, a Node module for text editing with alignment support.
+This repository contains an enhanced version of oficial `n8n-nodes-base.editImage`, a Node module for text editing with alignment support.
 
 ## Description
 
-The `node-base-edit-node` is a Node module that allows text editing within a node environment. However, the alignment functionality in the original `node-base-edit-node` can be complex and challenging to use. This enhanced version adds improved alignment features to make the task of aligning text easier as needed.
+The `n8n-nodes-edit-image-plus` is a Node module that allows text editing within a node environment. However, the alignment functionality in the oficial N8N Edit Image can be complex and challenging to use. This enhanced version adds improved alignment features to make the task of aligning text easier as needed.
 
 ## Added Features
 
-- Left, center, and right text alignment.
-- Enhanced user interface for alignment options selection.
-- Example of a fictitious address aligned with different alignment options.
+- Align(Gravity): Left, center, and right, top and bottom text alignment.
+- Enhanced user interface for alignment options selection with Text Width and Height.
+
+![Print sample](https://raw.githubusercontent.com/unilogica/n8n-edit-image-plus/master/print-sample.png)
+
 
 ## Example
 
