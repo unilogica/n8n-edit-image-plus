@@ -341,6 +341,13 @@ const nodeOperationOptions: INodeProperties[] = [
 		displayName: 'Gravity',
 		name: 'textGravity',
 		type: 'options',
+		default: 'Center',
+		displayOptions: {
+			show: {
+				operation: ['text'],
+			},
+		},
+		description: 'Text Align',
 		options: [
 			{
 				name: 'Center',
@@ -388,13 +395,6 @@ const nodeOperationOptions: INodeProperties[] = [
 				description: 'West Text Position',
 			},
 		],
-		default: 'Center',
-		displayOptions: {
-			show: {
-				operation: ['text'],
-			},
-		},
-		description: 'Text Align',
 	},
 	{
 		displayName: 'Position Y',
@@ -1343,7 +1343,7 @@ export class EditImagePlus implements INodeType {
 							    operationData.positionX as number,
 							    operationData.positionY as number,
                                                          )
-                                                        .gravity(operationData.gravity)
+                                                        .gravity(operationData.textGravity as string)
 							.fill(operationData.fontColor as string)
 							.fontSize(operationData.fontSize as number)
 							.drawText(0, 0, renderText);

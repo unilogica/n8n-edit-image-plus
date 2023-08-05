@@ -1,9 +1,14 @@
 {
-  "name": "n8n-nodes-base.editImagePlus",
-  "version": "0.1.0",
+  "name": "n8n-nodes-edit-image-plus",
+  "version": "0.1.1",
   "description": "N8N Edit Image Plus",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "n8n",
+    "node",
+    "no-code",
+    "n8n-nodes-edit-image-plus",
+    "n8n-community-nodes-edit-image-plus"
   ],
   "license": "MIT",
   "homepage": "https://unilogica.com",
@@ -30,7 +35,7 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "nodes": [
-      "dist/nodes/editImagePlus/editImagePlus.node.js"
+      "dist/nodes/EditImagePlus/EditImagePlus.node.js"
     ]
   },
   "devDependencies": {
