@@ -1332,28 +1332,21 @@ export class EditImagePlus implements INodeType {
 
 						const font = options.font || operationData.font;
 
-						gmInstance.region(
-							operationData.textWidth as number,
-							operationData.height as number,
-							operationData.positionX as number,
-							operationData.positionY as number,
-						);
-
-						gmInstance.gravity(operationData.gravity);
-
 						if (font && font !== 'default') {
 							gmInstance = gmInstance!.font(font as string);
 						}
 
 						gmInstance = gmInstance!
+						        .region(
+							    operationData.textWidth as number,
+							    operationData.height as number,
+							    operationData.positionX as number,
+							    operationData.positionY as number,
+                                                         )
+                                                        .gravity(operationData.gravity)
 							.fill(operationData.fontColor as string)
 							.fontSize(operationData.fontSize as number)
 							.drawText(0, 0, renderText);
-						// .drawText(
-						// 	operationData.positionX as number,
-						// 	operationData.positionY as number,
-						// 	renderText,
-						// );
 					} else if (operationData.operation === 'transparent') {
 						gmInstance = gmInstance!.transparent(operationData.color as string);
 					}
