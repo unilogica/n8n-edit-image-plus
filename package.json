@@ -6,10 +6,10 @@
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://unilogica.com",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Allyson de Paula",
+    "email": "depaula@unilogica.com"
   },
   "repository": {
     "type": "git",
