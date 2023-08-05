@@ -15,10 +15,9 @@ The `n8n-nodes-edit-image-plus` is a Node module that allows text editing within
 - Align(Gravity): Left, center, and right, top and bottom text alignment.
 - Enhanced user interface for alignment options selection with Text Width and Height.
 
-![Print sample](https://github.com/unilogica/n8n-edit-image-plus/blob/master/print-sample.png?raw=true)
-
-
 ## Example
+
+![Print sample](https://github.com/unilogica/n8n-edit-image-plus/blob/master/print-sample.png?raw=true)
 
 ## License
 
