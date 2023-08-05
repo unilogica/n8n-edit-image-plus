@@ -314,30 +314,6 @@ const nodeOperationOptions: INodeProperties[] = [
 		description: 'Y (vertical) position of the text',
 	},
 	{
-		displayName: 'Width',
-		name: 'textWidth',
-		type: 'number',
-		default: 200,
-		displayOptions: {
-			show: {
-				operation: ['text'],
-			},
-		},
-		description: 'Width of the text',
-	},
-	{
-		displayName: 'Height',
-		name: 'textHeight',
-		type: 'number',
-		default: 50,
-		displayOptions: {
-			show: {
-				operation: ['text'],
-			},
-		},
-		description: 'Height of the text',
-	},
-	{
 		displayName: 'Gravity',
 		name: 'textGravity',
 		type: 'options',
@@ -395,18 +371,6 @@ const nodeOperationOptions: INodeProperties[] = [
 				description: 'West Text Position',
 			},
 		],
-	},
-	{
-		displayName: 'Position Y',
-		name: 'positionY',
-		type: 'number',
-		default: 50,
-		displayOptions: {
-			show: {
-				operation: ['text'],
-			},
-		},
-		description: 'Y (vertical) position of the text',
 	},
 	{
 		displayName: 'Max Line Length',
@@ -1337,16 +1301,9 @@ export class EditImagePlus implements INodeType {
 						}
 
 						gmInstance = gmInstance!
-						        .region(
-							    operationData.textWidth as number,
-							    operationData.height as number,
-							    operationData.positionX as number,
-							    operationData.positionY as number,
-                                                         )
-                                                        .gravity(operationData.textGravity as string)
 							.fill(operationData.fontColor as string)
 							.fontSize(operationData.fontSize as number)
-							.drawText(0, 0, renderText);
+							.drawText(operationData.positionX as number, operationData.positionY as number, renderText, operationData.textGravity as string);
 					} else if (operationData.operation === 'transparent') {
 						gmInstance = gmInstance!.transparent(operationData.color as string);
 					}
