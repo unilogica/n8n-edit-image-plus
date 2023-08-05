@@ -19,6 +19,19 @@ The `n8n-nodes-edit-image-plus` is a Node module that allows text editing within
 
 ![Print sample](https://github.com/unilogica/n8n-edit-image-plus/blob/master/print-sample.png?raw=true)
 
+
+## Installing n8n-nodes-edit-image-plus
+
+To install a custom node in n8n, follow these steps:
+
+1. Refer to the official documentation: [n8n Custom Node Installation](https://docs.n8n.io/integrations/community-nodes/installation/)
+
+2. Choose the custom node you want to install, for example, `n8n-nodes-edit-image-plus`.
+
+3. Follow the instructions provided in the documentation to install and configure the custom node.
+
+For detailed installation steps and configuration options, please visit the official n8n documentation linked above.
+
 ## License
 
 [MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
