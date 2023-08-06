@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-base.editImagePlus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "keywords": [
     "n8n-community-node-package"
@@ -30,7 +30,7 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "nodes": [
-      "dist/nodes/editImagePlus/editImagePlus.node.js"
+      "dist/nodes/EditImagePlus/EditImagePlus.node.js"
     ]
   },
   "devDependencies": {
